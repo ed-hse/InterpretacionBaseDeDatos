@@ -1,0 +1,167 @@
+#! Esta combinacion de caracteres es para descartar esta linea, tal como si fuera un comentario, pero solo es al comienzo de la linea
+#! La combinacion #$! Es para etiquetas
+#! Etiquetas {#$!Currency,#$!Reports,#$!UsersInfo,#$!OnlyOneRow,#$!EmptyCurrentTable,#$!Products,#$!,#$!Sequential,#$!InnerTree,#$!InnerComasValuesUser,#$!InnerComasValuesSystem,#$!Settings,#$!AuditoLog,#$!SensitiveData}
+
+abonos
+/*!40000 ALTER TABLE `abonos` DISABLE KEYS */;
+INSERT INTO `abonos`(`id`,`invoiceid`,`date`,`type`,`total`,`change`,`facturaid`) VALUES
+/*!40000 ALTER TABLE `abonos` ENABLE KEYS */;
+
+#!asistencias
+#!/*!40000 ALTER TABLE `asistencias` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `asistencias` ENABLE KEYS */;
+
+categorias
+/*!40000 ALTER TABLE `categorias` DISABLE KEYS */;
+INSERT INTO `categorias`(`id`,`name`,`color`,`count`,`active`,`hidden`,`menushow`) VALUES
+/*!40000 ALTER TABLE `categorias` ENABLE KEYS */;
+
+comandas
+/*!40000 ALTER TABLE `comandas` DISABLE KEYS */;
+INSERT INTO `comandas`(`id`,`name`,`printer_type`,`printer_name`,`printer_name2`,`printer_name3`,`printer_size`) VALUES
+/*!40000 ALTER TABLE `comandas` ENABLE KEYS */;
+
+config
+/*!40000 ALTER TABLE `config` DISABLE KEYS */;
+INSERT INTO `config`(`id`,`currency`,`usevoice`,`footer`,`useprinterthermical`,`printername`,`printersecname`,`printeruuid`,`hidetutorial`,`printerwidth`,`printer80mm`,`btprinter80mm`,`iscoderequired`,`isautoprint`,`isautocloseinitems`,`usebackup`,`remote`,`airplay`,`impuesto`,`folio_cortez`,`useimpuesto`,`typechange`,`autoprintstatus`,`autopayexactly`,`customcount`,`isprinterip`,`printeripaddress`,`useizettle`,`backupdate`,`sendinfo`,`newsletter`,`anclarmenu`,`fullscreen`,`labelwidht`,`labelhight`,`islandscape`,`labelprintername`,`labelprintercharmax`,`dropboxtoken`,`autobackup`,`usecodebar`,`modetouch`,`useitemsalfabetic`,`reportpreferences`,`printinvoicepayed`,`checkupdates`,`usependiente`,`usehidepayed`,`showcombostitle`,`useprivilegios`,`modecomanda`,`showabonos`,`useiqr`,`useitemnotes`,`useimageitems`,`useitemdiscount`,`usefactura`,`useuseraccess`,`itemgroupclose`,`loginuserwithonlycode`,`customitemonlyadmin`,`autoredirectsell`,`autocleansearchbox`,`useduplicatenote`,`showavailablesitems`,`usercancancelnotes`,`usetableuserdirect`,`showprintlabels`,`printusd`,`seatcatch`,`hiddeniva`,`hiddensubtotal`,`autofillwithpays`,`useclockticket`,`asktypechange`,`useitemshow`,`useitemprinttickets`,`useprintwithcard`,`usekda`,`userhost`,`usesobregirar`,`showimageoncotizacion`) VALUES
+/*!40000 ALTER TABLE `config` ENABLE KEYS */;
+
+cortes
+/*!40000 ALTER TABLE `cortes` DISABLE KEYS */;
+INSERT INTO `cortes`(`id`,`date`,`date_start`,`date_end`,`folio`,`empleado`,`terminal`,`inicial`,`cierre`,`cierre_debito`,`cierre_credito`,`cierre_transferencia`,`cierre_creditos`,`ventas`,`gastos`,`total`,`diferencia`,`estado`,`is_closed`) VALUES
+/*!40000 ALTER TABLE `cortes` ENABLE KEYS */;
+
+cortez
+/*!40000 ALTER TABLE `cortez` DISABLE KEYS */;
+INSERT INTO `cortez`(`id`,`date`,`terminal`,`idproceso`,`idpay`,`iduser`,`idcategory`,`iditem`,`count`,`total`,`ganancias`) VALUES
+/*!40000 ALTER TABLE `cortez` ENABLE KEYS */;
+
+#!cotizaciones
+#!/*!40000 ALTER TABLE `cotizaciones` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `cotizaciones` ENABLE KEYS */;
+
+dbversion
+/*!40000 ALTER TABLE `dbversion` DISABLE KEYS */;
+INSERT INTO `dbversion`(`id`,`mayor`,`minor`,`build`,`revision`) VALUES
+/*!40000 ALTER TABLE `dbversion` ENABLE KEYS */;
+
+email
+/*!40000 ALTER TABLE `email` DISABLE KEYS */;
+INSERT INTO `email`(`id`,`type`,`server`,`port`,`security`,`mailname`,`mail`,`mailpassword`,`subject`) VALUES
+/*!40000 ALTER TABLE `email` ENABLE KEYS */;
+
+business
+/*!40000 ALTER TABLE `business` DISABLE KEYS */;
+INSERT INTO `business`(`id`,`name`,`direction`,`phone`,`rfc`,`owner`,`startnotes`,`startfacturas`,`startordenes`,`usenotes`,`logo`,`footer`,`ciudad`,`estado`,`zip`,`fiscal`,`web`,`email`) VALUES
+/*!40000 ALTER TABLE `business` ENABLE KEYS */;
+
+clients
+/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+INSERT INTO `clients`(`id`,`onlineid`,`membershipid`,`photo`,`code`,`name`,`direcction`,`phone`,`email`,`codezip`,`razonsocial`,`rfc`,`fiscalregime`,`credits`,`typeprice`,`fingerprint`,`membershipexpire`,`points`,`uuid`,`ciudad`,`colonia`,`estado`,`hide`,`usocfdi`) VALUES
+/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
+
+historial
+/*!40000 ALTER TABLE `historial` DISABLE KEYS */;
+INSERT INTO `historial`(`id`,`created_at`,`type`,`description`,`user_id`) VALUES
+/*!40000 ALTER TABLE `historial` ENABLE KEYS */;
+
+#!insumos
+#!/*!40000 ALTER TABLE `insumos` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `insumos` ENABLE KEYS */;
+
+inventario
+/*!40000 ALTER TABLE `inventario` DISABLE KEYS */;
+INSERT INTO `inventario`(`id`,`codigo`,`sku`,`category`,`iscombo`,`childid`,`combotype`,`membershipdays`,`proveedorid`,`description`,`info`,`talla`,`price`,`price2`,`price3`,`minunits`,`units`,`real_price`,`realunits`,`priceunit`,`iva`,`typeieps`,`ieps`,`inventariar`,`count`,`typeimpuesto`,`typeunit`,`unitpeso`,`nota`,`ubicationid`,`descuento`,`faltantes`,`ispedido`,`imagen`,`ready`,`items`,`claveprodserv`,`claveunidad`,`satunidad`,`satdescripcion`,`menushow`,`menudescription`,`printer`,`dinamico`,`multisell`,`credits`,`antibiotico`) VALUES
+/*!40000 ALTER TABLE `inventario` ENABLE KEYS */;
+
+invoice
+/*!40000 ALTER TABLE `invoice` DISABLE KEYS */;
+INSERT INTO `invoice`(`id`,`userid`,`cajaid`,`invoicecode`,`ordercode`,`facturacode`,`fecha`,`date`,`time`,`subtotal`,`total`,`priceunit`,`impuesto`,`ieps`,`ganancia`,`employee`,`paid`,`descuento`,`promocion`,`copynumber`,`ready`,`description`,`revision`,`invoicetype`,`paytype`,`paymoney`,`paycard`,`paydebit`,`paytransfer`,`paycredits`,`payed`,`change`,`moneymn`,`moneyusd`,`credit`,`voucher`,`money`,`usepromocioncode`,`isabono`,`asabono`,`status`,`ubicationid`,`changetype`,`call_last`,`call_agend`,`hide`,`amidomicilio`,`amicode`,`items`,`moneys`,`usocfdi`,`facturado`,`uuid`,`cdfidate`,`paymentterms`,`paymentmethod`,`cfdisign`,`satcertnumber`,`satsign`,`rfcprovcertif`,`satoriginal`,`factura_id`,`tips`,`custom_use`,`custom_use_entrega`,`custom_venta`,`custom_pendiente`,`custom_messasge`,`custom_entrega`,`custom_days`) VALUES
+/*!40000 ALTER TABLE `invoice` ENABLE KEYS */;
+
+#!movimientos
+#!/*!40000 ALTER TABLE `movimientos` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `movimientos` ENABLE KEYS */;
+
+#!note_orders
+#!/*!40000 ALTER TABLE `notes_orders` DISABLE KEYS */;
+#!INSERT INTO `notes_orders`(`id`,`date`,`count`) VALUES
+#!/*!40000 ALTER TABLE `notes_orders` ENABLE KEYS */;
+
+#!ordenes
+#!/*!40000 ALTER TABLE `ordenes` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `ordenes` ENABLE KEYS */;
+
+#!pedidos
+#!/*!40000 ALTER TABLE `pedidos` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `pedidos` ENABLE KEYS */;
+
+permisos
+/*!40000 ALTER TABLE `permisos` DISABLE KEYS */;
+INSERT INTO `permisos`(`id`,`user_id`,`permiso_id`,`activo`) VALUES
+/*!40000 ALTER TABLE `permisos` ENABLE KEYS */;
+
+places
+/*!40000 ALTER TABLE `places` DISABLE KEYS */;
+INSERT INTO `places`(`id`,`name`,`active`) VALUES
+/*!40000 ALTER TABLE `places` ENABLE KEYS */;
+
+#!promociones
+#!/*!40000 ALTER TABLE `promociones` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `promociones` ENABLE KEYS */;
+
+reportscategory
+/*!40000 ALTER TABLE `reportscategory` DISABLE KEYS */;
+INSERT INTO `reportscategory`(`id`,`categoryid`,`name`,`active`,`system`,`show`,`sumar`) VALUES
+/*!40000 ALTER TABLE `reportscategory` ENABLE KEYS */;
+
+/*!40000 ALTER TABLE `reportsettings` DISABLE KEYS */;
+INSERT INTO `reportsettings`(`id`,`show_notes`,`show_items_sell`) VALUES
+/*!40000 ALTER TABLE `reportsettings` ENABLE KEYS */;
+
+#!reservaciones
+#!/*!40000 ALTER TABLE `reservaciones` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `reservaciones` ENABLE KEYS */;
+
+#!sellpaused
+#!/*!40000 ALTER TABLE `sellpaused` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `sellpaused` ENABLE KEYS */;
+
+tables
+/*!40000 ALTER TABLE `tables` DISABLE KEYS */;
+INSERT INTO `tables`(`id`,`placeid`,`clientid`,`userid`,`name`,`anotation`,`items`,`moneys`,`tabletype`,`status`,`persons`,`istimer`,`time`,`seat`,`employee`,`payed`,`total`) VALUES
+/*!40000 ALTER TABLE `tables` ENABLE KEYS */;
+
+terminalmovimientos
+/*!40000 ALTER TABLE `terminalmovimientos` DISABLE KEYS */;
+INSERT INTO `terminalmovimientos`(`id`,`terminal_id`,`user_id`,`pay_type`,`type`,`target_id`,`total`,`is_print`) VALUES
+/*!40000 ALTER TABLE `terminalmovimientos` ENABLE KEYS */;
+
+#!tickets
+#!/*!40000 ALTER TABLE `tickets` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `tickets` ENABLE KEYS */;
+
+#!tickets_entregas
+#!/*!40000 ALTER TABLE `tickets_entregas` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `tickets_entregas` ENABLE KEYS */;
+
+#!tickets_items
+#!/*!40000 ALTER TABLE `tickets_items` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `tickets_items` ENABLE KEYS */;
+
+#!tickets_message
+#!/*!40000 ALTER TABLE `tickets_message` DISABLE KEYS */;
+#!/*!40000 ALTER TABLE `tickets_message` ENABLE KEYS */;
+
+topseller
+/*!40000 ALTER TABLE `topseller` DISABLE KEYS */;
+INSERT INTO `topseller`(`id`,`date`,`typeunit`,`categoryid`,`itemid`,`childid`,`name`,`count`,`total`,`ganancias`,`iva`,`ieps`) VALUES
+/*!40000 ALTER TABLE `topseller` ENABLE KEYS */;
+
+users
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users`(`id`,`code`,`user`,`password`,`name`,`email`,`remote`,`deviceid`,`photo`,`fingerprint`) VALUES
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+
+
+
